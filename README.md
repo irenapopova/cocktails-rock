@@ -1,10 +1,11 @@
-#### REACT Application 
+#### REACT Application
 
 #### Cocktails
 
 ### tech used
 
-- JavaScript 
-- React 
+- JavaScript
+- React
+- React Hooks
 - CSS
 - HTML
