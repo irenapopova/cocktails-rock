@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Rout, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // import pages
 
@@ -7,12 +7,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import SingleCocktail from './pages/SingleCocktail';
 import Error from './pages/Error';
-// import navbar 
+// import components - navbar 
 import Navbar from "./components/Navbar";
 
-export default function App() {
+function App() {
   return (
     <Router>
+      <Navbar />
       // switch component makes sure to render the first child that matches the URL
       <Switch>
         <Route exact path="/">
@@ -36,3 +37,5 @@ export default function App() {
 
   );
 }
+
+export default App;
